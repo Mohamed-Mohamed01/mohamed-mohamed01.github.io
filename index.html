@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Mohamed — Portfolio</title>
+  <meta name="description" content="Student • builder • aviation enthusiast. Projects, resume, and contact." />
+  <meta property="og:title" content="Mohamed Mohamed — Portfolio" />
+  <meta property="og:description" content="Projects, experience, and ways to reach me." />
+  <meta property="og:image" content="og-image.png" />
+  <link rel="icon" href="favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-zinc-900 antialiased selection:bg-emerald-200/60">
+  <header class="sticky top-0 bg-white/80 backdrop-blur border-b border-zinc-200">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <a href="#home" class="font-semibold">Mohamed Mohamed</a>
+      <div class="space-x-4 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#experience" class="hover:underline">Experience</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="resume.pdf" class="px-3 py-1 rounded bg-emerald-600 text-white">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home" class="max-w-5xl mx-auto px-4">
+    <!-- Hero -->
+    <section class="py-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Mohamed Mohamed</h1>
+      <p class="mt-3 text-lg text-zinc-700">Student • builder • aviation enthusiast</p>
+      <div class="mt-6 flex gap-3">
+        <a href="#projects" class="px-4 py-2 rounded bg-emerald-600 text-white">See Projects</a>
+        <a href="#contact" class="px-4 py-2 rounded border border-zinc-300">Contact</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 border-t border-zinc-200">
+      <h2 class="text-2xl font-bold">About</h2>
+      <p class="mt-3 text-zinc-700">
+        Short bio goes here. Mention what you study, the work you enjoy, and what you’re learning next.
+      </p>
+      <ul class="mt-4 flex flex-wrap gap-2 text-sm">
+        <li class="px-3 py-1 rounded-full bg-zinc-100">Aviation ✈️</li>
+        <li class="px-3 py-1 rounded-full bg-zinc-100">Coding 💻</li>
+        <li class="px-3 py-1 rounded-full bg-zinc-100">Fitness 🏋️</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-12 border-t border-zinc-200">
+      <h2 class="text-2xl font-bold">Projects</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <article class="p-4 border rounded-2xl">
+          <h3 class="font-semibold">Project One</h3>
+          <p class="mt-2 text-sm text-zinc-700">One sentence on impact.</p>
+          <a class="mt-3 inline-block text-emerald-700 underline" href="#" target="_blank" rel="noreferrer">View</a>
+        </article>
+        <article class="p-4 border rounded-2xl">
+          <h3 class="font-semibold">Project Two</h3>
+          <p class="mt-2 text-sm text-zinc-700">One sentence value statement.</p>
+          <a class="mt-3 inline-block text-emerald-700 underline" href="#" target="_blank" rel="noreferrer">View</a>
+        </article>
+        <article class="p-4 border rounded-2xl">
+          <h3 class="font-semibold">Project Three</h3>
+          <p class="mt-2 text-sm text-zinc-700">One sentence value statement.</p>
+          <a class="mt-3 inline-block text-emerald-700 underline" href="#" target="_blank" rel="noreferrer">View</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience/Skills -->
+    <section id="experience" class="py-12 border-t border-zinc-200">
+      <h2 class="text-2xl font-bold">Experience & Skills</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-6">
+        <ul class="space-y-2 text-zinc-700 text-sm">
+          <li>• Role @ Org — quantified achievement</li>
+          <li>• Role @ Org — another crisp bullet</li>
+          <li>• Education — program / grad year</li>
+        </ul>
+        <ul class="flex flex-wrap gap-2 text-sm">
+          <li class="px-3 py-1 rounded-full bg-zinc-100">Java</li>
+          <li class="px-3 py-1 rounded-full bg-zinc-100">Python</li>
+          <li class="px-3 py-1 rounded-full bg-zinc-100">Git</li>
+          <li class="px-3 py-1 rounded-full bg-zinc-100">SQL</li>
+          <li class="px-3 py-1 rounded-full bg-zinc-100">HTML/CSS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 border-t border-zinc-200">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-3 text-zinc-700">
+        Email me at <a class="underline text-emerald-700" href="mailto:you@example.com">you@example.com</a> ·
+        <a class="underline text-emerald-700" href="#" target="_blank" rel="noreferrer">LinkedIn</a> ·
+        <a class="underline text-emerald-700" href="#" target="_blank" rel="noreferrer">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="py-10 text-center text-sm text-zinc-500 border-t border-zinc-200">
+    © <span id="y"></span> Mohamed Mohamed · Built by me
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
